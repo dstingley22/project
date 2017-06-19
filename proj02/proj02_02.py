@@ -11,3 +11,9 @@ previous two numbers in the sequence. The sequence looks like this:
 """
 
 
+total=int(raw_input("How many Fibonacci nubers do you want to generate?"))
+while total sssss
+
+
+
+
