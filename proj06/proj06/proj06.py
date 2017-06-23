@@ -50,63 +50,23 @@ print ("Welcome to Hangman! Be ready to lose...")
 
 listwrong=[]
 
-#print wordlist
+print wordlist
 chosenword=choose_word(wordlist)
 print chosenword
-guesses = 1
+guesses = 0
 
-emptylist = []
+chosenletter= raw_input("Type in a letter please! And after 8 trials of defeat, you shall perish.")
+
+for guesses in range(1,9):
+    if chosenletter != chosenword:
+        print guesses
+
 for letters in chosenword:
-    emptylist.append("_")
-print emptylist
-
-chosenletter = raw_input("Type in a letter please! And after 8 trials of defeat, you shall perish.")
-print [chosenletter]
-
-while guesses > 0:
-    if chosenletter not in chosenword:
-        print ("that is incorrect")
-        guesses = guesses-1
-        listwrong.append(chosenletter)
-        print listwrong
-
-if letters == chosenword:
-    print "Correct, you are still terrible, but just keep trying... hahahaha!"
-
-if chosenletter == chosenword:
-    print ("You must have cheated to accomplish beating me, but u have won :(")
-
-
-# for letters in chosenword:
-#     if letters== chosenletter:
-#         print letters
-
-
-#         while chosenword < chosenletter:
-#
-#             print fools_game
-# for guesses in range(1,9):
-#     if chosenletter > chosenword:
-#         print True
-#
-#     else:
-#         print guesses
-#
-# for letters in chosenword:
-#     print [""]
-#
-# #
-# for letters in chosenword:
-#
-#         if letters == chosenletter:
-#
-#             print letters
-#
-#     else:
-#         print [""]
-
-# for guesses in chosenword:
-#     if chosenword < letters:
-#         print fools_game
-
-
+    #print [""]
+    if letters == chosenletter:
+        print letters
+    else:
+        print [""]
+    # for letters in chosenletter:
+    #     if letters in chosenword:
+    #         chosenword.append(letters)
