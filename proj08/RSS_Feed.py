@@ -232,8 +232,8 @@ def main_thread(p):
     # A sample trigger list - you'll replace
     # this with something more configurable in Problem 11
     t1 = SubjectTrigger("Trump")
-    t2 = SummaryTrigger("Vanderbilt")
-    t3 = PhraseTrigger("Net Neutrality")
+    t2 = SummaryTrigger("America")
+    t3 = PhraseTrigger("New York City")
     t4 = OrTrigger(t2, t3)
     triggerlist = [t1, t4]
     
